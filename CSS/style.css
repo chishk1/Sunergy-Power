@@ -1,0 +1,955 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:500');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+}
+
+.hero {
+  background-image: url('../images/solar_house1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+li,
+a,
+button {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  background-color: #28a745;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 30px 10%;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav__links {
+  flex: 8;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links li {
+  position: relative;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.nav__links li a:hover {
+  background-color: #218838;
+}
+
+.nav__links li ul a:hover {
+  background-color: #e8e6e6;
+}
+
+.nav__links li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #28a745;
+  min-width: 160px;
+}
+
+.nav__links li:hover ul {
+  display: block;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav__links li ul li {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.74);
+}
+
+button {
+  flex: 2;
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #c82333;
+}
+
+.container {
+  background-color: #E6E6E6;
+  width: 750px;
+  border-radius: 15px;
+  padding: 50px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.about p {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  float: left;
+  margin-top: 300px;
+  margin-left: 25px;
+  padding: 20px;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 24px;
+}
+
+.content {
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #f0f0f0;
+}
+
+.content h2 {
+  text-align: center;
+  color: green;
+  background-color: #f0f0f0;
+  padding-bottom: 25px;
+}
+
+.container-quote {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 8px;
+}
+
+form {
+  width: 55%;
+}
+
+h1 {
+  color: green;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.input-group-quote {
+  margin-bottom: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="range"] {
+  width: 75%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+output {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.checkbox-group,
+.radio-group {
+  margin-top: 5px;
+}
+
+.checkbox-group label,
+.radio-group label {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.map {
+  width: 50%;
+  align-self: flex-start;
+  margin-left: 20px;
+}
+
+.map h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.map-image {
+  width: 100%;
+  height: 300px;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 1.5em;
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.line {
+  width: 60px;
+  height: 2px;
+  background-color: #ccc;
+  margin: 20px;
+}
+
+.form-box {
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 165%;
+  padding: 15px;
+  padding-left: 45px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+.next-btn {
+  background-color: green;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 125px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.next-btn:hover {
+  background-color: #229c28;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 30px;
+  background-color: #f0f0f0;
+}
+
+.service-box {
+  background-color: #fff;
+  padding: 100px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 22%;
+}
+
+.service-box a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.booking {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #218838;
+  border-radius: 100px 100px 0px 0px;
+}
+
+.solar-panel-img {
+  max-width: 50%;
+  border-radius: 100px 0px 0px 0px;
+}
+
+.text-context {
+  max-width: 40%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.text-context h2 {
+  color: white;
+  padding: 20px;
+}
+
+.quote-button {
+  padding: 10px 20px;
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+footer {
+  font-size: 0.8em;
+  width: 95%;
+  position: relative;
+  margin: 3vw 3vw;
+}
+
+footer p {
+  color: black;
+}
+
+footer a {
+  color: black;
+}
+
+.hero-savings {
+  background-image: url('../images/solar_house2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  padding: 20px;
+}
+
+.price-savings {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.price-savings h1 {
+  color: black;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.price-savings p {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.price-savings .quote-btn {
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.price-tiers {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.tier {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.tier h3 {
+  margin-bottom: 10px;
+}
+
+.tier p {
+  line-height: 1.5;
+}
+
+.learn-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  float: left;
+  margin-top: 25px;
+  margin-left: 25px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 24px;
+}
+
+.how-solar-works h2 {
+  margin-bottom: 10px;
+}
+
+.how-solar-works p {
+  margin-bottom: 20px;
+}
+
+.how-solar-works button {
+  background-color: #007e3a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.video {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video img {
+  width: 80%;
+}
+
+.why-solar {
+  text-align: center;
+}
+
+.why-solar h2 {
+  margin-bottom: 20px;
+}
+
+.solar-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+}
+
+.card img {
+  width: 450px;
+  height: 280px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.card button {
+  background-color: #007e3a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.diagram {
+  margin-top: 50px;
+}
+
+.diagram img {
+  width: 100%;
+}
+
+.solar-systems {
+  display: grid;
+  grid-template-columns: 300px, 1fr;
+}
+
+.system-category {
+  text-align: left;
+}
+
+#residential {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  padding-bottom: 50px;
+}
+
+#commercial {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.category-btn {
+  background-color: #056839;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  /*1 column*/
+  padding: 0.5px;
+  margin: 0.5em;
+}
+
+.item-card {
+  display: inline-block;
+  padding: 0.5em;
+  margin: 0.2em;
+}
+
+.text-style-center {
+  text-align: center;
+}
+
+.image-style {
+  display: block;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-button-style {
+  margin: 0.5em;
+  padding: 1em;
+  cursor: pointer;
+}
+
+
+/*------------------------*/
+/*Styles changes for MEDIUM DEVICES: iPads or Tablets
+  screen width: 426 px -> 768px 
+*/
+@media only screen and (min-width: 426px) {
+  .item-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*2 columns*/
+  }
+
+}
+
+
+
+
+/*------------------------*/
+/*Styles changes for BIG DEVICES: PC or desktops
+  screen width: >= 769px 
+*/
+@media only screen and (min-width: 769px) {
+  .item-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*3 columns*/
+  }
+}
+
+.privacy {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.privacy h1 {
+  font-size: 2rem;
+  color: #0056b3;
+  margin-bottom: 1rem;
+}
+
+.privacy h2 {
+  font-size: 1.5rem;
+  color: #0056b3;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.privacy p, ul {
+  font-size: 1rem;
+  color: #333;
+}
+
+.privacy ul {
+  margin: 0 0 1rem 1.5rem;
+  list-style-type: disc;
+}
+
+.privacy li {
+  color: black;
+}
+
+.privacy strong {
+  color: #0056b3;
+}
+
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav__links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav__links li {
+    margin-bottom: 10px;
+  }
+
+  #residential {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #commercial {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .nav__links li ul {
+    display: none;
+    position: relative;
+    width: 100%;
+    background-color: #28a745;
+    z-index: 1;
+    padding: 10px 0;
+  }
+
+  .nav__link li:hover ul {
+    display: block;
+  }
+
+  .nav__link li ul li {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+  }
+
+  .nav__link li ul li:hover {
+    background-color: #218838;
+  }
+
+  .nav__link li ul li a {
+    color: black;
+  }
+
+  .burger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .nav__links.active {
+    display: flex;
+  }
+
+  .logo {
+    width: 80%;
+  }
+
+  button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .input-group input {
+    width: 100%;
+  }
+
+  .about p {
+    margin-left: 0;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .services {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .service-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .booking {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .solar-panel-img {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .text-context {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .solar-panel-img {
+    max-width: 50%;
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  .container-quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  form {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .map {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 450px;
+    border: 1px solid #ccc;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .price-savings,
+  .tier {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .price-tiers {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .service-box,
+  .map,
+  .video {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .text-context {
+    padding: 10px;
+  }
+
+  .solar-panel-img,
+  .map img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .input-group input,
+  form {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .learn-section {
+    flex-direction: column;
+    margin: 20px 10px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .how-solar-works h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .how-solar-works p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .how-solar-works button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .video img {
+    width: 100%;
+  }
+
+  .why-solar h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .solar-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .card button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .diagram {
+    margin-top: 30px;
+  }
+
+  .diagram img {
+    width: 100%;
+  }
+}

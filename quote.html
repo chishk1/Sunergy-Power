@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<!------------------------------HEAD------------------------------------------------>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunergy Power</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+</head>
+<!------------------------------BODY------------------------------------------------>
+
+
+<body>
+    <!--------------------------Navigation bar------------------------------------------>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo_wide.png" alt="logo"></a></div>
+        <div class="burger" id="burgerid">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <nav>
+            <ul class="nav__links" id="nav__linksid">
+                <li><a href="savings.html">Price & Savings</a>
+                    <ul>
+                        <li><a href="">Price & Savings</a></li>
+                        <li><a href="">Solar Calculator</a></li>
+                        <li><a href="">Finance</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li><a href="technical.html">Learn</a>
+                    <ul>
+                        <li><a href="">How Solar Works</a></li>
+                        <li><a href="">Why Go Solar</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </li>
+                <li><a href="systems.html">Solar Systems</a>
+                    <ul>
+                        <li><a href="">Residential Solar</a></li>
+                        <li><a href="">Commercial Solar</a></li>
+                        <li><a href="">Our Products</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Our Process</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <a href="quote.html"><button>Free Quote</button></a>
+    </header>
+
+    <!--Header area-->
+    <div class="container-quote">
+        <form>
+            <fieldset>
+                <h1>Book your Free Quote</h1>
+
+                <legend>Your Details</legend>
+
+                <div class="input-group-quote">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name">
+                </div>
+
+                <div class="input-group-quote">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name">
+                </div>
+
+                <div class="input-group-quote">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="input-group-quote">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Example format: 0223456789">
+                </div>
+
+                <div class="input-group-quote full-width">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Enter your address or find on map">
+                </div>
+
+                <div class="input-group-quote full-width">
+                    <label for="power-bill">Average monthly power bill (excluding gas)</label>
+                    <input type="range" id="power-bill" name="power-bill" min="0" max="500" value="50">
+                    <output for="power-bill" id="power-bill-output">$50</output>
+                </div>
+
+                <div class="input-group-quote">
+                    <label>Roof type</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="roof-type" value="metal"> Metal/Iron</label>
+                        <label><input type="checkbox" name="roof-type" value="tile"> Concrete Tile</label>
+                        <label><input type="checkbox" name="roof-type" value="other"> Other</label>
+                    </div>
+                </div>
+
+                <div class="input-group-quote">
+                    <label>Is this an existing home, or new home</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="home-status" value="existing-no-solar"> Existing, without solar
+                            yet</label>
+                        <label><input type="radio" name="home-status" value="existing-solar"> Existing, with solar
+                            already</label>
+                        <label><input type="radio" name="home-status" value="new-ready"> New, ready for solar</label>
+                        <label><input type="radio" name="home-status" value="new-to-be-built"> New, to be built</label>
+                    </div>
+                </div>
+
+                <div class="input-group-quote">
+                    <label>Are you the homeowner? (or authority to act for homeowner)</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="homeowner" value="yes"> Yes</label>
+                        <label><input type="radio" name="homeowner" value="no"> No</label>
+                        <label><input type="radio" name="homeowner" value="business"> It's business/commercial</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-button">Submit</button>
+            </fieldset>
+        </form>
+
+        <div class="map">
+            <h2>Find your address</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3076.9242314482367!2d176.8447184768059!3d-39.53876323458276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d69b4156a9c6573%3A0x5f88e31686c62078!2s501%20Gloucester%20Street%2C%20Taradale%2C%20Napier%204112!5e0!3m2!1sen!2snz!4v1724812376122!5m2!1sen!2snz"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+
+    <!--Footer Area-->
+    <footer>
+        <p><small>&copy; Sunergy Power. Website powered by Websplosion</small></p>
+        <p><small> Images sourced from <a href="https://unsplash.com/">Unsplash</a></small></p>
+        <p><small><a href="privacy.html">Privacy Policy</a></small></p>
+    </footer>
+</body>
+
+</html>
